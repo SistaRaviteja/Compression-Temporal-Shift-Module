@@ -1,0 +1,12 @@
+numpy
+torchvision
+torch
+torchmetrics
+torchvision
+matplotlib
+dahuffman
+scipy
+PIL
+open-cv
+json
+tqdm
