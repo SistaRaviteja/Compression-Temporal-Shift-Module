@@ -22,8 +22,8 @@ class config:
         self.enable_init = False
         self.init = "KHe"
         self.pre_trained_model_weights = False
-        # self.pre_train_model_path = "/home/sudeesh/Cholec_DTSM/experiments/1/models/compression_with_tsm_ep_100.pth"
-        # self.pre_train_optimizer_path = "/home/sudeesh/Cholec_DTSM/experiments/1/models/compression_with_tsm_optimizer_ep_100.pth"
+        # self.pre_train_model_path = "/path/to/pre_trained_model.pth"
+        # self.pre_train_optimizer_path = "/path/to/pre_trained_optimizer.pth"
          
         self.depth = 3 # Change the depth to switch between variations of CTSM models.
         self.seed = 3407
@@ -52,23 +52,22 @@ class config:
         self.save_architecture = True
         self.save_each_model = True
 
-        self.base_path = "/home/sudeesh/Cholec_DTSM/experiments/"
+        self.base_path = "/path/to/experiments/"
         self.save_metrics = "metrics/"
         self.models = "models/"
         self.results ="results/"
         self.stats = "stats/"
         self.outputs = "outputs/"
 
-        self.dataset = "d3"
-        self.additional_files = "/storage/sudeesh/Cholec80/additional_files/"
+        self.additional_files = "/path/to/additional_files/"
 
         self.exp_path = self.base_path + self.exp_no + "/"
         
-        self.train_files = self.additional_files+"train_"+self.overlap+"_"+self.sequence_length+"_files_"+self.dataset+".npy"
-        self.test_files = self.additional_files+"test_"+self.overlap+"_"+self.sequence_length+"_files_"+self.dataset+".npy"
+        self.train_files = self.additional_files+"train_"+self.overlap+"_"+self.sequence_length+"_files_"+".npy"
+        self.test_files = self.additional_files+"test_"+self.overlap+"_"+self.sequence_length+"_files_"+".npy"
 
-        self.val_train_files = self.additional_files+"val_train_"+self.overlap+"_"+self.sequence_length+"_files_"+self.dataset+".npy"
-        self.val_test_files = self.additional_files+"val_test_"+self.overlap+"_"+self.sequence_length+"_files_"+self.dataset+".npy"
+        self.val_train_files = self.additional_files+"val_train_"+self.overlap+"_"+self.sequence_length+"_files_"+".npy"
+        self.val_test_files = self.additional_files+"val_test_"+self.overlap+"_"+self.sequence_length+"_files_"+".npy"
 
         self.saved_model_paths = {
         'best_val': self.exp_path+self.models+self.exp_id+"_best_val.pth",
