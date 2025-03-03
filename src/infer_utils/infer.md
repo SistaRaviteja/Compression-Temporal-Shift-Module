@@ -43,7 +43,7 @@ This script calculates the **Frames Per Second (FPS)** during inference on a CPU
 
 ### 5. `infer_video.py`
 This script is used for:
-- **Generating Videos:** Reconstructs original and compressed videos from frames using the pre-trained model.
+- **Generating Videos:** Generated original and reconstructed videos using the pre-trained model.
 - **Calculating VMAF (Video Multi-Method Assessment Fusion):** Assesses video quality using FFmpeg commands:
 
 ```bash
